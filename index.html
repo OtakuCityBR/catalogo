@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku City - Decoração Anime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --cor-primaria: #e63946;
+            --cor-secundaria: #f1faee;
+            --cor-destaque: #a8dadc;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+        }
+        
+        header {
+            text-align: center;
+            padding: 25px 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid var(--cor-primaria);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.ibb.co/0jHPY4Z2/OC.png') center/cover;
+            opacity: 1;
+            z-index: -1;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--cor-primaria);
+            text-shadow: 0 0 10px rgba(230, 57, 70, 0.7);
+			opacity: 0.1;
+        }
+        
+        h2 {
+            margin: 0 0 30px;
+            font-size: 1.5em;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        
+        .anime-button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 8px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            padding-right: 150px; /* Espaço para a imagem */
+        }
+        
+        /* BOTÃO DO NARUTO PERSONALIZADO */
+        .anime-button.naruto {
+            background: rgba(0, 0, 0, 0.6) url('https://i.ibb.co/zVp9pbqR/naruto.png') no-repeat right center;
+            background-size: auto 100%;
+        }
+        
+        .anime-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 12px rgba(0, 0, 0, 0.4);
+        }
+        
+        .anime-button:active {
+            transform: translateY(1px);
+        }
+        
+        .anime-button i {
+            margin: 0 15px 0 20px;
+            font-size: 1.5em;
+            color: var(--cor-destaque);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .anime-button span {
+            position: relative;
+            z-index: 1;
+            white-space: nowrap;
+        }
+        
+        .social-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--cor-primaria);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            transition: all 0.3s;
+        }
+        
+        .social-float:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OTAKU CITY</h1>
+        
+    </header>
+    
+    <div class="container">
+		
+        <button class="anime-button naruto" onclick="window.location.href='#'">
+            <i class="fas fa-dragon"></i>
+            <span>Naruto Shippuden</span>
+        </button>
+        
+        <button class="anime-button" onclick="window.location.href='#'">
+            <i class="fas fa-bolt"></i>
+            <span>Dragon Ball Super</span>
+        </button>
+        
+        <button class="anime-button" onclick="window.location.href='#'">
+            <i class="fas fa-skull-crossbones"></i>
+            <span>One Piece</span>
+        </button>
+        
+        <button class="anime-button" onclick="window.location.href='#'">
+            <i class="fas fa-ghost"></i>
+            <span>Attack on Titan</span>
+        </button>
+        
+        <button class="anime-button" onclick="window.location.href='#'">
+            <i class="fas fa-mask"></i>
+            <span>My Hero Academia</span>
+        </button>
+        
+        <button class="anime-button" onclick="window.location.href='#'">
+            <i class="fas fa-sword"></i>
+            <span>Demon Slayer</span>
+        </button>
+    </div>
+    
+    <a href="https://instagram.com/seudoperfil" class="social-float" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <footer>
+        <p>© 2025 Otaku City • Contato: (11) 9 5858-8616 • contato@otakucity.com.br</p>
+    </footer>
+</body>
+</html>
