@@ -43,10 +43,21 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
         
+        /* Título CATÁLOGO */
+        .catalog-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            color: var(--cor-primaria);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin: 8px 0;
+            letter-spacing: 2px;
+        }
+        
         .container {
             width: 100%;
             max-width: 100%;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 15px;
             flex: 1;
         }
@@ -228,6 +239,10 @@
             header {
                 height: 180px;
             }
+            
+            .catalog-title {
+                font-size: 3em;
+            }
         }
         
         /* Versão para desktop */
@@ -244,6 +259,10 @@
             header {
                 height: 200px;
             }
+            
+            .catalog-title {
+                font-size: 3.5em;
+            }
         }
     </style>
 </head>
@@ -252,6 +271,8 @@
     <header role="banner" aria-label="Logo Otaku City"></header>
     
     <div class="container">
+        <h1 class="catalog-title">CATÁLOGO</h1>
+        
         <div class="buttons-grid">
             <!-- Botões reordenados conforme solicitado -->
             <button class="anime-button one-piece" onclick="window.location.href='https://otakucitybr.github.io/One_Piece/'">
@@ -310,7 +331,7 @@
                 <span>Dragon Ball</span>
             </button>
             
-            <button class="anime-button attack-on-titan" onclick="window.location.href='https://otakucitybr.github.io/aot/'">
+            <button class="anime-button attack-on-titan" onclick="window.location.href='https://otakucitybr.github.io/Attack_on_Titan/'">
                 <span>Attack on Titan</span>
             </button>
             
